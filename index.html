@@ -6,17 +6,14 @@
     <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-    <a href="bear.jpg" download><div class="block">hello</div></a>
-    <a href=""><div class="block"></div></a>
-    <a href=""><div class="block"></div></a>
-    <a href=""><div class="block"></div></a>
-    <a href=""><div class="block"></div></a>
-    <a href=""><div class="block"></div></a>
-    <a href=""><div class="block"></div></a>
-    <a href=""><div class="block"></div></a>
-    <a href=""><div class="block"></div></a>
-    <a href=""><div class="block"></div></a>
-    <a href="bear.jpg" download>download</a>
-    <script src="script3.js"></script>
+    <script>
+        document.querySelector('button').onclick = () => {
+            let msg = document.querySelector('input').value;
+            let xhr = new XMLHttpRequest();
+            const token = '1845089154:AAE-jk0fFa_WtoSke8mnlYr-pefEBCpiA2s';
+            xhr.open('GET', 'https://api.telegram.org/bot'+token+'/sendMessage?chat_id=635640826&text='+msg, true);
+            xhr.send()   
+        }
+    </script>
 </body>
 </html>
