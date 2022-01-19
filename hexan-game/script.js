@@ -1,12 +1,12 @@
 function startGame() {
-    console.log(ctx.createImageData(canvas.width, canvas.height));
+    // console.log(ctx.createImageData(canvas.width, canvas.height));
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     canvas.style.display = "block";
     camera = new Camera();
-    world = new World(150, 150);
+    world = new World(250, 250);
     world.create();
-    world.generate(0.3, 3);
+    world.generate(1, 3);
     if (navigator.userAgentData.mobile) {
         window.addEventListener("mousemove", (event) => {
             drawCameraMobile(event, camera);
