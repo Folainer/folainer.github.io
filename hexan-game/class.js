@@ -46,7 +46,7 @@ class Camera {
         // ctx.font = "bold 50px Arial"
         // ctx.fillStyle = color8;
         // ctx.fillText(`FPS:${fps}`, 80, 80);
-        console.log(fps);
+        // console.log(fps);
         _fps++;
     }
 }

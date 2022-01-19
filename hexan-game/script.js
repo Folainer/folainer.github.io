@@ -4,9 +4,9 @@ function startGame() {
     canvas.height = window.innerHeight;
     canvas.style.display = "block";
     camera = new Camera();
-    world = new World(500, 500);
+    world = new World(250, 250);
     world.create();
-    world.generate(0.3, 3);
+    world.generate(1.2, 1);
     if (navigator.userAgentData.mobile) {
         window.addEventListener("mousemove", (event) => {
             drawCameraMobile(event, camera);
