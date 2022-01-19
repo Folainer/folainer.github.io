@@ -7,10 +7,13 @@ function startGame() {
     world = new World(250, 250);
     world.create();
     world.generate(1, 3);
+    // window.addEventListener("touchstart", (event) => {
+    //     drawCameraMobile(event, camera);
+    // });
     if (navigator.userAgentData.mobile) {
-        window.addEventListener("mousemove", (event) => {
+        window.addEventListener("touchmove", (event) => {
             drawCameraMobile(event, camera);
-        })
+        });
     } else {
         window.addEventListener("mousedown", (event) => drawCamera(event, camera));
     }
