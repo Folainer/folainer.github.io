@@ -70,12 +70,11 @@ class World {
         this.hexan = hexan;
     }
     generate(density = 1, scatter = 1) {
-        let count = density * Math.ceil(Math.random() * this.height * this.width) + 5 * this.width + 5 * this.height;
-        let i = Math.floor(Math.random() * this.height / 2) + this.height / 4;
-        let j = Math.floor(Math.random() * this.width / 2) + this.width / 4;
+        let count = density * Math.ceil(Math.random() * this.height * this.width) + density * Math.ceil(Math.random() * this.height * this.width);
+        let i = Math.floor(Math.random() * this.height / 2 + this.height / 4);
+        let j = Math.floor(Math.random() * this.width / 2 + this.width / 4);
         this.hexan[i * this.width + j].isVisable = true;
         while (count > 0) {
-            let k = 0;
             while (true) {
                 if (scatter == 1) {
                     i = i + Math.floor(Math.random() * 3) - 1;
