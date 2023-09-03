@@ -1,0 +1,29 @@
+header {
+    height: 60px;
+    background-color: rgb(56, 56, 56);
+}
+
+.nav__wrapper {
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+nav {
+    height: 60px;
+    background-color: #00000066;
+}
+
+.nav__link {
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 60px;
+    padding: 0 10px;
+    color: white;
+}
+
+.nav__link:hover {
+    background: #00000066;
+}
