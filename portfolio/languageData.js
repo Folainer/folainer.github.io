@@ -3,6 +3,7 @@ const languageData = [
         code: 'EN',
         menu: ['Main', 'Portfolio'],
         filter: ['This month', 'This year', 'All', 'All(reserved order)'],
+        filterLabels: ['Upload Date', 'Group'],
         portfolio: [
             {
                 title: 'Programming Arduino LED matrix',
@@ -253,6 +254,7 @@ const languageData = [
         code: 'UA',
         menu: ['Меню', 'Портфоліо'],
         filter: ['Цей місяць', 'Цей рік', 'Все', 'Все(обернений порядок)'],
+        filterLabels: ['Дата завантаження', 'Група'],
         portfolio: [
             {
                 title: 'Програмування світлодіодної матриці Arduino',

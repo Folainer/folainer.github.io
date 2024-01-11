@@ -4,25 +4,27 @@ class Portfolio {
         const portfolio = lang.portfolio;
         const uniqueGroups = this.findGroups(lang)
         this.element = document.createElement('main');
+
+        // <div class='filter__item'>
+        //     <div class='filter__title'>${lang.filterLabels[0]}</div>
+        //     <div class='filter__option'>
+        //         <input class='filter__radio' type='radio' name='date' id='month'><label for='month'><span class="filter__span">${lang.filter[0]}</span></label>
+        //     </div>
+        //     <div class='filter__option'>
+        //         <input class='filter__radio' type='radio' name='date' id='year'><label for='year'><span class="filter__span">${lang.filter[1]}</span></label>
+        //     </div>
+        //     <div class='filter__option'>
+        //         <input class='filter__radio' type='radio' name='date' id='all' checked><label for='all'><span class="filter__span">${lang.filter[2]}</span></label>
+        //     </div>
+        //     <div class='filter__option'>
+        //         <input class='filter__radio' type='radio' name='date' id='reversedAll'><label for='reversedAll'><span class="filter__span">${lang.filter[3]}</span></label>
+        //     </div>
+        // </div>
+
         this.element.innerHTML =  `
         <div class='filter'>
             <div class='filter__item'>
-                <div class='filter__title'>Upload date</div>
-                <div class='filter__option'>
-                    <input class='filter__radio' type='radio' name='date' id='month'><label for='month'>${lang.filter[0]}</label>
-                </div>
-                <div class='filter__option'>
-                    <input class='filter__radio' type='radio' name='date' id='year'><label for='year'>${lang.filter[1]}</label>
-                </div>
-                <div class='filter__option'>
-                    <input class='filter__radio' type='radio' name='date' id='all' checked><label for='all'>${lang.filter[2]}</label>
-                </div>
-                <div class='filter__option'>
-                    <input class='filter__radio' type='radio' name='date' id='reversedAll'><label for='reversedAll'>${lang.filter[3]}</label>
-                </div>
-            </div>
-            <div class='filter__item'>
-                <div class='filter__title'>Group</div>
+                <div class='filter__title'>${lang.filterLabels[1]}</div>
                 <select class='filter__select' name="groups" id="groups">
                     <option class='filter__selectoption' selected value="All">${lang.filter[2]}</option>
                     ${
