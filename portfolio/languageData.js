@@ -144,30 +144,6 @@ const languageData = [
             },
             {
                 date: new Date('2023-08-31'),
-                title: 'Drawing #2',
-                group: ['Drawing'],
-                src: 'img/drawing2.jpg',
-                link: 'drawing2.html',
-                content: [
-                    {
-                    maintitle: 'Drawing #2'
-                    },
-                    {
-                        title: 'The final result of my work'
-                    },
-                    {
-                        image: 'drawing2.jpg'
-                    },
-                    {
-                        title: 'Description of the work'
-                    },
-                    {
-                        text: textEN6
-                    }
-                ]         
-            },
-            {
-                date: new Date('2023-08-31'),
                 title: 'Drawing #3',
                 group: ['Drawing'],
                 src: 'img/drawing3.jpg',
@@ -193,6 +169,81 @@ const languageData = [
                     },
                     {
                         pdf: ['drawing3.pdf', 'work process']
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-01-09'),
+                title: 'Blueprint',
+                group: ['Blueprint', 'Drawing'],
+                src: 'img/blueprint1.png',
+                link: 'blueprint1.html',
+                content: [
+                    {
+                    maintitle: 'Blueprint'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        image: 'blueprint1.png'
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN8
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-01-10'),
+                title: 'Assembler',
+                group: ['Programming'],
+                src: 'img/assembler.png',
+                link: 'assembler.html',
+                content: [
+                    {
+                    maintitle: 'Assembler'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        image: 'assembler.png'
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN9
+                    },
+                    {
+                        pdf: ['assemblerDubugging.pdf', 'Program debugging']
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-01-11'),
+                title: 'Online store website',
+                group: ['Programming', 'WEB'],
+                src: 'img/onlineStore.webp',
+                link: 'online_store.html',
+                content: [
+                    {
+                    maintitle: 'Online store website'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        video: videoEN10
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN10
                     }
                 ]         
             },
@@ -331,30 +382,6 @@ const languageData = [
             },
             {
                 date: new Date('2023-08-31'),
-                title: 'Малюнок №2',
-                group: ['Малювання'],
-                src: 'img/drawing2.jpg',
-                link: 'drawing2.html',
-                content: [
-                    {
-                    maintitle: 'Малюнок №2'
-                    },
-                    {
-                        title: 'Кінцевий результат моєї роботи'
-                    },
-                    {
-                        image: 'drawing2.jpg'
-                    },
-                    {
-                        title: 'Опис роботи'
-                    },
-                    {
-                        text: textUA6
-                    }
-                ]         
-            },
-            {
-                date: new Date('2023-08-31'),
                 title: 'Малюнок №3',
                 group: ['Малювання'],
                 src: 'img/drawing3.jpg',
@@ -383,8 +410,84 @@ const languageData = [
                     }
                 ]         
             },
+            {
+                date: new Date('2024-01-09'),
+                title: 'Креслення',
+                group: ['Креслення', 'Малювання'],
+                src: 'img/blueprint1.png',
+                link: 'blueprint1.html',
+                content: [
+                    {
+                    maintitle: 'Креслення'
+                    },
+                    {
+                        title: 'Результат роботи'
+                    },
+                    {
+                        image: 'blueprint1.png'
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA8
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-01-10'),
+                title: 'Асемблер',
+                group: ['Програмування'],
+                src: 'img/assembler.png',
+                link: 'assembler.html',
+                content: [
+                    {
+                    maintitle: 'Асемблер'
+                    },
+                    {
+                        title: 'Результат роботи'
+                    },
+                    {
+                        image: 'assembler.png'
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA9
+                    },
+                    {
+                        pdf: ['assemblerDubugging.pdf', 'Налагодження програми']
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-01-11'),
+                title: 'Сайт інтернет-магазину',
+                group: ['Програмування', 'WEB'],
+                src: 'img/onlineStore.webp',
+                link: 'online_store.html',
+                content: [
+                    {
+                    maintitle: 'Сайт інтернет-магазину'
+                    },
+                    {
+                        title: 'Результат роботи'
+                    },
+                    {
+                        video: videoEN10
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA10
+                    }
+                ]         
+            },
         ]
     },
+    
     // {
     //     code: 'JP',
     //     menu: ['メニュー', 'ポートフォリオ']
