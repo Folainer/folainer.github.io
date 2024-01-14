@@ -18,16 +18,16 @@ const textEN4 = ['The game was developed using the Python language and the Tkint
 const textUA4 = ['Гра розроблена з використанням мови Python і бібліотеки Tkinter.', 'У цьому проекті брали участь Крутуз Максим, Леопольд Керн та Цзяо Ю.'];
 
 
-const textEN5 = ['In this picture, 裴紫彤 is drawn.', 'In this work, a simple pencil with a rod with a diameter of 3 millimeters and ordinary colored pencils were used.'];
-const textUA5 = ['На цьому малюнку намальовано 裴紫彤.', 'У цій роботі використовувався простий олівець зі стрижнем діаметром 3 міліметри і звичайні кольорові олівці.'];
+const textEN5 = ['In this work, a simple pencil with a rod with a diameter of 3 millimeters and ordinary colored pencils were used.'];
+const textUA5 = ['У цій роботі використовувався простий олівець зі стрижнем діаметром 3 міліметри і звичайні кольорові олівці.'];
 
 
-const textEN6 = ['裴紫彤 is drawn on this photo.', 'In this work, a simple pencil with a rod with a diameter of 3 millimeters and ordinary colored pencils were used.'];
-const textUA6 = ['На цій фотографії намальовано 裴紫彤.', 'У цій роботі використовувався простий олівець зі стрижнем діаметром 3 міліметри і звичайні кольорові олівці.'];
+const textEN6 = ['In this work, a simple pencil with a rod with a diameter of 3 millimeters and ordinary colored pencils were used.'];
+const textUA6 = ['У цій роботі використовувався простий олівець зі стрижнем діаметром 3 міліметри і звичайні кольорові олівці.'];
 
 
-const textEN7 = ['On this picture is drawn me, my Ukrainian and Taiwanese friends.', 'In this work, a simple pencil with a rod with a diameter of 3 millimeters and ordinary colored pencils were used.'];
-const textUA7 = ['На цьому малюнку зображені я, мої українські та тайванські друзі.', 'У цій роботі використовувався простий олівець зі стрижнем діаметром 3 міліметри і звичайні кольорові олівці.'];
+const textEN7 = ['On this picture is drawn me and my friends.', 'In this work, a simple pencil with a rod with a diameter of 3 millimeters and ordinary colored pencils were used.'];
+const textUA7 = ['На цьому малюнку зображені я та мої друзі.', 'У цій роботі використовувався простий олівець зі стрижнем діаметром 3 міліметри і звичайні кольорові олівці.'];
 
 
 const textEN8 = ['In this work, a three-dimensional figure was drawn using isometric projection.'];

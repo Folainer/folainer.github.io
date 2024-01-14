@@ -459,7 +459,7 @@ const languageData = [
                         text: textUA9
                     },
                     {
-                        pdf: ['assemblerDubugging.pdf', 'Налагодження програми']
+                        pdf: ['assemblerDubuggingUA.pdf', 'Налагодження програми']
                     }
                 ]         
             },

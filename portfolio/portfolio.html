@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/porfolio.css" />
+    <link rel="stylesheet" href="css/footer.css">
     <title>Portfolio</title>
     <script src="app.js"></script>
     <script src="content.js"></script>
@@ -14,13 +15,14 @@
     <script src="language.js"></script>
     <script src="header.js"></script>
     <script src="portfolio.js"></script>
+    <script src="footer.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="page"></div>
   </body>
   <script>
-    const app = new App([new Header(), new Portfolio()]);
+    const app = new App([new Header(), new Portfolio(), new Footer()]);
     app.create();
   </script>
 </html>

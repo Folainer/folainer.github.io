@@ -1,11 +1,15 @@
 main {
-    max-width: 1180px;
+    max-width: 1250px;
     margin: 0 auto;
     display: grid;
-    padding: 30px 15px 0 15px;
-    grid-template-columns: 250px 6fr;
+    padding: 30px 25px 0 25px;
+    grid-template-columns: 240px 6fr;
     grid-template-rows: 1fr;
     grid-gap: 30px;
+}
+
+.filter__close {
+    display: none;
 }
 
 .filter__item {
@@ -18,9 +22,9 @@ main {
     content: '';
     display: block;
     width: 100%;
-    height: 3px;
-    border-radius: 3px;
-    background-color: rgb(229, 229, 229);
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
 }
 
 .filter__title {
@@ -28,6 +32,7 @@ main {
     font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
+    color: rgb(35, 35, 35);
 }
 
 .filter__option {
@@ -46,9 +51,31 @@ main {
     height: 30px;
 }
 
+.filter__blur {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.filter__button {
+    content: '';
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgb(172, 172, 172);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.filter__buttonImg {
+    height: 25px;
+}
+
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     grid-auto-rows: 300px;
     grid-gap: 25px;
 }
@@ -83,6 +110,7 @@ main {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    user-select: none;
 }
 
 .portfolio__title {
@@ -91,4 +119,67 @@ main {
     font-family: sans-serif;
     padding: 0 5px;
     user-select: none;
+}
+
+@media (max-width: 1000px) {
+    .filter {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 400px;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 4px 0 rgb(172, 172, 172);
+        z-index: 2;
+    }
+
+    .filter_close {
+        display: none;
+    }
+
+    .filter__blur {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.295);
+    }
+
+    .filter__blur_closed {
+        display: none;
+    }
+
+    .filter__title {
+        margin-top: 15px;
+    }
+
+    .filter__title + .filter__title {
+        margin-top: 30px;
+    }
+
+    .filter__close {
+        display: block;
+    }
+
+    .filter__closeImg {
+        display: block;
+        margin-left: auto;
+        height: 30px;
+        padding: 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio {
+        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    .filter {
+        box-sizing: border-box;
+        width: 100vw;
+    }
 }

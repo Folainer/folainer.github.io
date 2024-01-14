@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/work.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <script src="../app.js"></script>
     <script src="../content.js"></script>
     <script src="../languageData.js"></script>
     <script src="../language.js"></script>
     <script src="../header.js"></script>
     <script src="../work.js"></script>
+    <script src="../footer.js"></script>
     <title>Work</title>
   </head>
   <body>
@@ -23,7 +25,7 @@
   <script>
     const item = languageData[localStorage.getItem('language')].portfolio[0];
     const workParam = createParamaters(item);
-    const app = new App([new Header(), new Work(workParam, 0)]);
+    const app = new App([new Header(), new Work(workParam, 0), new Footer()]);
     app.create();
     // let swiper = new Swiper(".mySwiper", {
     //   spaceBetween: 10,

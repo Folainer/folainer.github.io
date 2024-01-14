@@ -4,11 +4,11 @@ header {
 }
 
 .nav__wrapper {
-    max-width: 1180px;
+    max-width: 1250px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 25px;
 }
 
 nav {

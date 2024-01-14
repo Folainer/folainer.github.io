@@ -5,24 +5,31 @@ class Portfolio {
         const uniqueGroups = this.findGroups(lang)
         this.element = document.createElement('main');
 
-        // <div class='filter__item'>
-        //     <div class='filter__title'>${lang.filterLabels[0]}</div>
-        //     <div class='filter__option'>
-        //         <input class='filter__radio' type='radio' name='date' id='month'><label for='month'><span class="filter__span">${lang.filter[0]}</span></label>
-        //     </div>
-        //     <div class='filter__option'>
-        //         <input class='filter__radio' type='radio' name='date' id='year'><label for='year'><span class="filter__span">${lang.filter[1]}</span></label>
-        //     </div>
-        //     <div class='filter__option'>
-        //         <input class='filter__radio' type='radio' name='date' id='all' checked><label for='all'><span class="filter__span">${lang.filter[2]}</span></label>
-        //     </div>
-        //     <div class='filter__option'>
-        //         <input class='filter__radio' type='radio' name='date' id='reversedAll'><label for='reversedAll'><span class="filter__span">${lang.filter[3]}</span></label>
-        //     </div>
-        // </div>
+        if (!localStorage.getItem('isFilter'))
+        {
+            localStorage.setItem('isFilter', '0');
+        }
 
         this.element.innerHTML =  `
-        <div class='filter'>
+        <div class='filter' style="display: ${this.filterDisplayValue()}">
+            <div class='filter__close'>
+                <img src='img/close.png' class='filter__closeImg'/>
+            </div>
+            <div class='filter__item'>
+                <div class='filter__title'>${lang.filterLabels[0]}</div>
+                <div class='filter__option'>
+                    <input class='filter__radio' type='radio' name='date' id='month'><label for='month'><span class="filter__span">${lang.filter[0]}</span></label>
+                </div>
+                <div class='filter__option'>
+                    <input class='filter__radio' type='radio' name='date' id='year'><label for='year'><span class="filter__span">${lang.filter[1]}</span></label>
+                </div>
+                <div class='filter__option'>
+                    <input class='filter__radio' type='radio' name='date' id='all' checked><label for='all'><span class="filter__span">${lang.filter[2]}</span></label>
+                </div>
+                <div class='filter__option'>
+                    <input class='filter__radio' type='radio' name='date' id='reversedAll'><label for='reversedAll'><span class="filter__span">${lang.filter[3]}</span></label>
+                </div>
+            </div>
             <div class='filter__item'>
                 <div class='filter__title'>${lang.filterLabels[1]}</div>
                 <select class='filter__select' name="groups" id="groups">
@@ -48,8 +55,59 @@ class Portfolio {
                     </div>`
                 }).join('')
             }
-        </div>`
+        </div>
+        <div class='filter__blur ${this.getFilterBlurClass()}'></div>
+        <div class='filter__button'>
+            <img class='filter__buttonImg' src='img/setting.png'/>
+        </div>`;
         document.body.append(this.element);
+        const filterBlur = document.querySelector('.filter__blur');
+        const filter = document.querySelector('.filter');
+        const filterButton = document.querySelector('.filter__button');
+
+        if (!this.isMobile()) {
+            filter.style.display = 'block';
+            filterButton.style.display = 'none';
+        } else {
+            if (localStorage.getItem('isFilter') == '1') {
+                filter.style.display = 'block';
+                filterButton.style.display = 'none';
+
+            } else {
+                filter.style.display = 'none';
+                filterButton.style.display = 'block';
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            if (!this.isMobile()) {
+                filter.style.display = 'block';
+                filterButton.style.display = 'none';
+            } else {
+                if (localStorage.getItem('isFilter') == '1') {
+                    filter.style.display = 'block';
+                    filterButton.style.display = 'none';
+
+                } else {
+                    filter.style.display = 'none';
+                    filterButton.style.display = 'block';
+                }
+            }
+        });
+
+        filterButton.addEventListener('click', ()=> {
+            filterButton.style.display = 'none';
+            filter.style.display = 'block';
+            localStorage.setItem('isFilter', '1');
+            filterBlur.style.display = 'block';
+        });
+        document.querySelector('.filter__closeImg').addEventListener('click', () => {
+            localStorage.setItem('isFilter', '0');
+            filter.style.display = 'none';
+            filterBlur.classList.add('filter__blur_closed');
+            filterBlur.style.display = 'none';
+            filterButton.style.display = 'block';
+        });
         const portfolio__items = document.querySelectorAll('.portfolio__item');
         const radioButtons = document.querySelectorAll('.filter__radio');
         radioButtons.forEach(radio => {
@@ -141,5 +199,34 @@ class Portfolio {
             })
         })
         return Array.from(uniqueGroups)
+    }
+
+    isMobile() {
+        if (window.innerWidth <= 1000) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    filterDisplayValue() {
+        if (localStorage.getItem('isFilter') == '0' && this.isMobile())
+        {
+            return 'none';
+        } else {
+            return 'block';
+        }
+    } 
+
+    closeFilter() {
+        alert("Hello");
+    }
+
+    getFilterBlurClass() {
+        if (localStorage.getItem('isFilter') == '0' && this.isMobile()) {
+            return 'filter__blur_closed';
+        } else {
+            return '';
+        }
     }
 }
