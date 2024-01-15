@@ -83,14 +83,16 @@ class Portfolio {
             if (!this.isMobile()) {
                 filter.style.display = 'block';
                 filterButton.style.display = 'none';
+                filterBlur.style.display = 'block';
             } else {
                 if (localStorage.getItem('isFilter') == '1') {
                     filter.style.display = 'block';
                     filterButton.style.display = 'none';
-
+                    filterBlur.style.display = 'block';
                 } else {
                     filter.style.display = 'none';
                     filterButton.style.display = 'block';
+                    filterBlur.style.display = 'none';
                 }
             }
         });
@@ -108,52 +110,74 @@ class Portfolio {
             filterBlur.style.display = 'none';
             filterButton.style.display = 'block';
         });
-        const portfolio__items = document.querySelectorAll('.portfolio__item');
+        const portfolioItems = document.querySelectorAll('.portfolio__item');
         const radioButtons = document.querySelectorAll('.filter__radio');
         radioButtons.forEach(radio => {
             radio.addEventListener('change', () => {
-                const indexAndDate = [];
-                portfolio__items.forEach((element, i) => {
+                let indexAndDate = [];
+                portfolioItems.forEach((element, i) => {
                     indexAndDate.push([i, new Date(element.dataset.date)]);
                 });
+                const IAD = indexAndDate.slice();
+                const IADreverse = IAD.slice().reverse();
                 switch(radio.id) {
                     case 'all':
-                        indexAndDate.sort((a, b) => a[1] - b[1]);
+                        indexAndDate = IAD;
                         break;
                     case 'reversedAll':
-                        indexAndDate.sort((a, b) => b[1] - a[1]);
+                        indexAndDate = IADreverse;
                         break;
                     default:
-                        indexAndDate.sort((a, b) => a[1] - b[1]);
-                        break;
+                        indexAndDate = IAD;
                 }
-                portfolio__items.forEach((element, i) => {
+                const selectItem = document.querySelector('.filter__select');
+                selectItem.value = lang.filter[2];
+                if (radio.id == 'month') {
+                    portfolioItems.forEach((element, i) => {
+                        element.dataset.g = true;
+                        const date = new Date(element.dataset.date);
+                        const nowDate = new Date();
+                        const timeDifference = nowDate.getTime() - date.getTime();
+
+                        const monthsDifference = timeDifference / (1000 * 60 * 60 * 24 * 30);
+
+                        if (monthsDifference < 1) {
+                            element.dataset.d = false;
+                        }   else {
+                            element.dataset.d = true;
+                        }
+                    });
+                } else if (radio.id == 'year') {
+                    portfolioItems.forEach((element, i) => {
+                        element.dataset.g = true;
+                        const date = new Date(element.dataset.date);
+                        const nowDate = new Date();
+                        const timeDifference = nowDate.getTime() - date.getTime();
+
+                        const monthsDifference = timeDifference / (1000 * 60 * 60 * 24 * 30 * 12);
+
+                        if (monthsDifference < 1) {
+                            element.dataset.d = false;
+                        }   else {
+                            element.dataset.d = true;
+                        }
+                    });
+                } else {
+                    portfolioItems.forEach((element, i) => {
+                        element.dataset.g = true;
+                        element.dataset.d = false;
+                    });
+                }
+                portfolioItems.forEach((element, i) => {
                     element.style.order = indexAndDate[i][0];
                     if (element.dataset.d == 'false' && element.dataset.g == 'true') {
-                        element.style.display = 'block';
+                        element.style.display = 'flex';
                         element.dataset.d = true;
+                    }   else {
+                        element.style.display = 'none';
+                        element.dataset.d = false;
                     }
                 })
-                if (radio.id == 'month') {
-                    portfolio__items.forEach((element, i) => {
-                        const date = new Date(element.dataset.date);
-                        const nowDate = new Date();
-                        if (new Date(`${nowDate.getFullYear()}-${nowDate.getMonth()}-${nowDate.getDate()}`).getTime() - new Date(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`).getTime() >= 0) {
-                            element.style.display = 'none';
-                            element.dataset.d = false;
-                        }
-                    })
-                } else if (radio.id == 'year') {
-                    portfolio__items.forEach((element, i) => {
-                        const date = new Date(element.dataset.date);
-                        const nowDate = new Date();
-                        if (new Date(`${nowDate.getFullYear() - 1}-${nowDate.getMonth() + 1}-${nowDate.getDate()}`).getTime() - new Date(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`).getTime() >= 0) {
-                            element.style.display = 'none';
-                            element.dataset.d = false;
-                        }
-                    })
-                }
-                console.log(indexAndDate)
             });
         })
         const items = document.querySelectorAll('.portfolio__item');
@@ -161,7 +185,7 @@ class Portfolio {
             element.dataset.group = portfolio[i].group
             element.dataset.date = portfolio[i].date
         })
-        portfolio__items.forEach((element, i) => {
+        portfolioItems.forEach((element, i) => {
             element.style.order = i;
             element.addEventListener('click', () => {
                 location.href = location.href.replace(/\/[^/]*$/, '') + '/works/' + element.dataset.link;
@@ -169,9 +193,9 @@ class Portfolio {
         })
         const selectItem = document.querySelector('.filter__select');
         selectItem.addEventListener('change', () => {
-            portfolio__items.forEach(element => {
+            portfolioItems.forEach(element => {
                 if (element.dataset.g == 'false' && element.dataset.d == 'true') {
-                    element.style.display = 'block';
+                    element.style.display = 'flex';
                     element.dataset.g = true;
                 }
                 if (!element.dataset.group.includes(selectItem.value) && selectItem.value != 'All') {

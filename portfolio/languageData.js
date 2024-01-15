@@ -2,7 +2,7 @@ const languageData = [
     {
         code: 'EN',
         menu: ['Main', 'Portfolio'],
-        filter: ['This month', 'This year', 'All', 'All(reserved order)'],
+        filter: ['This month', 'This year', 'All', 'All(reversed order)'],
         filterLabels: ['Upload Date', 'Group'],
         portfolio: [
             {

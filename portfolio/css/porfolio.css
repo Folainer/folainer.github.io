@@ -8,6 +8,11 @@ main {
     grid-gap: 30px;
 }
 
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
 .filter__close {
     display: none;
 }
@@ -123,7 +128,7 @@ main {
 
 @media (max-width: 1000px) {
     .filter {
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -181,5 +186,7 @@ main {
     .filter {
         box-sizing: border-box;
         width: 100vw;
+        height: 100vh;
+        border-radius: 0;
     }
 }
