@@ -489,9 +489,243 @@ const languageData = [
             },
         ]
     },
-    
-    // {
-    //     code: 'JP',
-    //     menu: ['メニュー', 'ポートフォリオ']
-    // }
+    {
+        code: 'JP',
+        menu: ['メニュー', 'ポートフォリオ'],
+        filter: ['今月', '今年', 'すべて', 'すべて（逆順）'],
+        filterLabels: ['アップロード日', 'グループ'],
+        portfolio: [
+            {
+                title: 'Arduino LED マトリックスのプログラミング',
+                date: new Date('2023-06-08'),
+                group: ['電子工学', ' プログラミング'],
+                src: 'img/arduino.webp',
+                link: 'led_matrix.html',
+                content: [
+                    {
+                        maintitle: 'Arduino LED マトリックスのプログラミング'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN1
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP1
+                    },
+                ]
+            },
+            {
+                date: new Date('2023-06-08'),
+                title: 'ジェットを撃つ',
+                group: ['ゲーム', 'プログラミング'],
+                src: 'img/shoot_jet.webp',
+                link: 'shoot_a_jet.html',
+                content: [
+                    {
+                    maintitle: 'ゲーム「ジェットを撃つ」'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN2
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP2
+                    },
+            ]
+            },
+            {
+                date: new Date('2023-08-24'),
+                title: 'Blender でのアニメーション',
+                group: ['アニメーション', '3D'],
+                src: 'img/blender_animation.webp',
+                link: 'animation_in_blender.html',
+                content: [
+                    {
+                    maintitle: 'Blender でのアニメーション'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN3
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP3
+                    },
+            ]
+            },
+            {
+                date: new Date('2023-08-24'),
+                title: '井戸取りゲーム',
+                group: ['ゲーム', 'プログラミング'],
+                src: 'img/tic_tac_toe_game.webp',
+                link: 'tic_tac_toe_game.html',
+                content: [
+                    {
+                    maintitle: '井戸取りゲーム'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN4
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP4
+                    },
+                ]         
+            },
+            {
+                date: new Date('2023-08-31'),
+                title: '第1図',
+                group: ['描画'],
+                src: 'img/drawing1.jpg',
+                link: 'drawing1.html',
+                content: [
+                    {
+                    maintitle: '第1図'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        image: 'drawing1.jpg'
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP5
+                    },
+                    {
+                        title: '作業過程（別の日に別々の写真が撮影されました）'
+                    },
+                    {
+                        pdf: ['drawing1.pdf', '作業過程']
+                    }
+                ]         
+            },
+            {
+                date: new Date('2023-08-31'),
+                title: '第3図',
+                group: ['描画'],
+                src: 'img/drawing3.jpg',
+                link: 'drawing3.html',
+                content: [
+                    {
+                    maintitle: '第3図'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        image: 'drawing3.jpg'
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP7
+                    },
+                    {
+                        title: '作業過程（別の日に別々の写真が撮影されました）'
+                    },
+                    {
+                        pdf: ['drawing3.pdf', '作業過程']
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-01-09'),
+                title: 'ブループリント',
+                group: ['ブループリント', '描画'],
+                src: 'img/blueprint1.png',
+                link: 'blueprint1.html',
+                content: [
+                    {
+                    maintitle: 'ブループリント'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        image: 'blueprint1.png'
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP8
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-01-10'),
+                title: 'アセンブリ言語',
+                group: ['プログラミング'],
+                src: 'img/assembler.png',
+                link: 'assembler.html',
+                content: [
+                    {
+                    maintitle: 'アセンブリ言語'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        image: 'assembler.png'
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP9
+                    },
+                    {
+                        pdf: ['assemblerDubugging.pdf', 'プログラムのデバッグ']
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-01-11'),
+                title: 'オンラインストアのウェブサイト',
+                group: ['プログラミング', 'WEB'],
+                src: 'img/onlineStore.webp',
+                link: 'online_store.html',
+                content: [
+                    {
+                    maintitle: 'オンラインストアのウェブサイト'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN10
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP10
+                    }
+                ]         
+            },
+        ]
+    },
 ];

@@ -131,7 +131,7 @@ class Portfolio {
                         indexAndDate = IAD;
                 }
                 const selectItem = document.querySelector('.filter__select');
-                selectItem.value = lang.filter[2];
+                selectItem.selectedIndex = 0;
                 if (radio.id == 'month') {
                     portfolioItems.forEach((element, i) => {
                         element.dataset.g = true;

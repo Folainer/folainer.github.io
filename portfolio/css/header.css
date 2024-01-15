@@ -12,6 +12,7 @@ header {
 }
 
 nav {
+    user-select: none;
     height: 60px;
     background-color: #00000066;
 }
