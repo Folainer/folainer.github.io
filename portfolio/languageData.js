@@ -115,36 +115,6 @@ const languageData = [
             },
             {
                 date: new Date('2023-08-31'),
-                title: 'Drawing #1',
-                group: ['Drawing'],
-                src: 'img/drawing1.jpg',
-                link: 'drawing1.html',
-                content: [
-                    {
-                    maintitle: 'Drawing #1'
-                    },
-                    {
-                        title: 'The final result of my work'
-                    },
-                    {
-                        image: 'drawing1.jpg'
-                    },
-                    {
-                        title: 'Description of the work'
-                    },
-                    {
-                        text: textEN5
-                    },
-                    {
-                        title: 'Work process (a separate photo was taken on a separate day)'
-                    },
-                    {
-                        pdf: ['drawing1.pdf', 'work process']
-                    }
-                ]         
-            },
-            {
-                date: new Date('2023-08-31'),
                 title: 'Drawing #3',
                 group: ['Drawing'],
                 src: 'img/drawing3.jpg',
@@ -354,36 +324,6 @@ const languageData = [
             },
             {
                 date: new Date('2023-08-31'),
-                title: 'Малюнок №1',
-                group: ['Малювання'],
-                src: 'img/drawing1.jpg',
-                link: 'drawing1.html',
-                content: [
-                    {
-                    maintitle: 'Малюнок №1'
-                    },
-                    {
-                        title: 'Кінцевий результат моєї роботи'
-                    },
-                    {
-                        image: 'drawing1.jpg'
-                    },
-                    {
-                        title: 'Опис роботи'
-                    },
-                    {
-                        text: textUA5
-                    },
-                    {
-                        title: 'Процес роботи (окреме фото зроблено в окремий день)'
-                    },
-                    {
-                        pdf: ['drawing1.pdf', 'Процес роботи']
-                    }
-                ]         
-            },
-            {
-                date: new Date('2023-08-31'),
                 title: 'Малюнок №3',
                 group: ['Малювання'],
                 src: 'img/drawing3.jpg',
@@ -589,36 +529,6 @@ const languageData = [
                     {
                         text: textJP4
                     },
-                ]         
-            },
-            {
-                date: new Date('2023-08-31'),
-                title: '第1図',
-                group: ['描画'],
-                src: 'img/drawing1.jpg',
-                link: 'drawing1.html',
-                content: [
-                    {
-                    maintitle: '第1図'
-                    },
-                    {
-                        title: 'プロジェクトの最終結果'
-                    },
-                    {
-                        image: 'drawing1.jpg'
-                    },
-                    {
-                        title: 'プロジェクトの説明'
-                    },
-                    {
-                        text: textJP5
-                    },
-                    {
-                        title: '作業過程（別の日に別々の写真が撮影されました）'
-                    },
-                    {
-                        pdf: ['drawing1.pdf', '作業過程']
-                    }
                 ]         
             },
             {
