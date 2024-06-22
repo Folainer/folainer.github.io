@@ -5,7 +5,7 @@ main {
 }
 
 .work__video {
-    width: 700px;
+    width: 100%;
     height: 380px;
 }
 
@@ -134,4 +134,18 @@ display: block;
 width: 100%;
 height: 100%;
 object-fit: cover;
+}
+
+@media (max-width: 550px) 
+{
+    .work__video {
+        height: 280px;
+    }
+}
+
+@media (max-width: 400px) 
+{
+    .work__video {
+        height: 180px;
+    }
 }

@@ -50,3 +50,22 @@ const videoEN10 = '<iframe class="work__video" src="https://www.youtube.com/embe
 const textEN10 = ['The site was written using technologies such as HTML, CSS and JavaScript. The goal of the project was to create a site that can be used for trading goods.'];
 const textUA10 = ['Сайт створено з використанням таких технологій, як HTML, CSS і JavaScript. Метою проекту було створити сайт, який можна використовувати для торгівлі товарами.'];
 const textJP10 = ['"このサイトは、HTML、CSS、およびJavaScriptなどの技術を使用して作成されました。プロジェクトの目標は、商品の取引に利用できるサイトを作成することでした。'];
+
+
+const videoEN11 = '<iframe class="work__video" src="https://www.youtube.com/embed/OW43JszhlKQ?si=GXyZAkvgv8xZmerR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const textEN11 = ['This project was written in C++ using the SFML library. Several programming patterns were used in this project, such as Singleton, Composite, Command and others. This program can select shapes and groups of shapes, move or cancel all previous actions.']
+const textUA11 = ['Цей проект був написаний на C++ з використанням бібліотеки SFML. У цьому проекті було використано кілька шаблонів програмування, таких як Singleton, Composite, Command та інші. Ця програма може вибирати фігури та групи фігур, переміщувати або скасовувати всі попередні дії.']
+const textJP11 = ['このプロジェクトは、SFML ライブラリを使用して C++ で作成されました。このプロジェクトでは、シングルトン、コンポジット、コマンドなどのいくつかのプログラミング パターンが使用されました。このプログラムでは、図形や図形のグループを選択したり、以前のすべてのアクションを移動またはキャンセルしたりできます。']
+
+
+const videoEN12 = '<iframe class="work__video" src="https://www.youtube.com/embed/MeRDbMMlij0?si=O1_h8QHen_xrQ-nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const textEN12 = ['This project was written in the C++ programming language, simulating certain commands from the Linux terminal. All command operations take place on virtual data.']
+const textUA12 = ['Цей проект був написаний на мові програмування C++, що імітує певні команди з терміналу Linux. Усі командні операції виконуються з віртуальними даними.']
+const textJP12 = ['このプロジェクトは C++ プログラミング言語で書かれており、Linux ターミナルからの特定のコマンドをシミュレートしています。すべてのコマンド操作は仮想データに対して実行されます。']
+
+
+const videoEN13 = '<iframe class="work__video" src="https://www.youtube.com/embed/Yxemf2Y7mJI?si=2nlXJLsK0sQJUzQS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const videoUA13 = '<iframe class="work__video" src="https://www.youtube.com/embed/uMGt7NAdR8A?si=ltGJCsgJbcYxWEoV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const textEN13 = ['This project was written in X86 architecture assembly programming language. This program simulates the pseudoparallism of many programs by using the clock interrupt.']
+const textUA13 = ['Цей проект був написаний мовою програмування архітектури X86. Ця програма імітує псевдопаралізм багатьох програм за допомогою переривання синхронізації.']
+const textJP13 = ['このプロジェクトは、X86 アーキテクチャのアセンブリ プログラミング言語で記述されています。このプログラムは、クロック割り込みを使用して、多くのプログラムの疑似並列性をシミュレートします。']

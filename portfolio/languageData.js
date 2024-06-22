@@ -218,6 +218,78 @@ const languageData = [
                     }
                 ]         
             },
+            {
+                date: new Date('2024-06-22'),
+                title: 'Development of the backend for the graphic editor',
+                group: ['Programming'],
+                src: 'img/hqdefault.webp',
+                link: 'graphicEditor.html',
+                content: [
+                    {
+                    maintitle: 'Development of the backend for the graphic editor'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        video: videoEN11
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN11
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-06-22'),
+                title: 'Backend development for the file manager',
+                group: ['Programming'],
+                src: 'img/hqdefault3.webp',
+                link: 'fileManager.html',
+                content: [
+                    {
+                    maintitle: 'Backend development for the file manager'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        video: videoEN12
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN12
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-06-22'),
+                title: '',
+                group: ['Programming'],
+                src: 'img/hqdefault2.webp',
+                link: 'multiprogramSystem.html',
+                content: [
+                    {
+                    maintitle: 'Model of multiprogram system on assembler'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        video: videoEN13
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN13
+                    }
+                ]         
+            },
         ]
     },
     {
@@ -427,6 +499,78 @@ const languageData = [
                     }
                 ]         
             },
+            {
+                date: new Date('2024-06-22'),
+                title: 'Розробка бекенда для графічного редактора',
+                group: ['Програмування'],
+                src: 'img/hqdefault.webp',
+                link: 'graphicEditor.html',
+                content: [
+                    {
+                    maintitle: 'Розробка бекенда для графічного редактора'
+                    },
+                    {
+                        title: 'Кінцевий результат моєї роботи'
+                    },
+                    {
+                        video: videoEN11
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA11
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-06-22'),
+                title: 'Розробка бекенда для файлового менеджера',
+                group: ['Програмування'],
+                src: 'img/hqdefault3.webp',
+                link: 'fileManager.html',
+                content: [
+                    {
+                    maintitle: 'Розробка бекенда для файлового менеджера'
+                    },
+                    {
+                        title: 'Кінцевий результат моєї роботи'
+                    },
+                    {
+                        video: videoEN12
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA12
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-06-22'),
+                title: 'Модель багатопрограмної системи на асемблері',
+                group: ['Програмування'],
+                src: 'img/hqdefault2.webp',
+                link: 'multiprogramSystem.html',
+                content: [
+                    {
+                    maintitle: 'Модель багатопрограмної системи на асемблері'
+                    },
+                    {
+                        title: 'Кінцевий результат моєї роботи'
+                    },
+                    {
+                        video: videoEN13
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA13
+                    }
+                ]         
+            },
         ]
     },
     {
@@ -633,6 +777,78 @@ const languageData = [
                     },
                     {
                         text: textJP10
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-06-22'),
+                title: 'グラフィックエディタのバックエンドの開発',
+                group: ['プログラミング'],
+                src: 'img/hqdefault.webp',
+                link: 'graphicEditor.html',
+                content: [
+                    {
+                    maintitle: 'グラフィックエディタのバックエンドの開発'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN11
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP11
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-06-22'),
+                title: 'ファイルマネージャーのバックエンド開発',
+                group: ['プログラミング'],
+                src: 'img/hqdefault3.webp',
+                link: 'fileManager.html',
+                content: [
+                    {
+                    maintitle: 'ファイルマネージャーのバックエンド開発'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN12
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP12
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-06-22'),
+                title: 'アセンブラ上のマルチプログラムシステムのモデル',
+                group: ['プログラミング'],
+                src: 'img/hqdefault2.webp',
+                link: 'multiprogramSystem.html',
+                content: [
+                    {
+                    maintitle: 'アセンブラ上のマルチプログラムシステムのモデル'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN13
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP13
                     }
                 ]         
             },
