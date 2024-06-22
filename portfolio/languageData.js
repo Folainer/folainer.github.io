@@ -268,7 +268,7 @@ const languageData = [
             },
             {
                 date: new Date('2024-06-22'),
-                title: '',
+                title: 'Model of multiprogram system on assembler',
                 group: ['Programming'],
                 src: 'img/hqdefault2.webp',
                 link: 'multiprogramSystem.html',
