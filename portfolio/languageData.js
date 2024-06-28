@@ -561,7 +561,7 @@ const languageData = [
                         title: 'Кінцевий результат моєї роботи'
                     },
                     {
-                        video: videoEN13
+                        video: videoUA13
                     },
                     {
                         title: 'Опис роботи'
