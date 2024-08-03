@@ -290,6 +290,105 @@ const languageData = [
                     }
                 ]         
             },
+            {
+                date: new Date('2024-08-03'),
+                title: 'Rendering of the document file',
+                group: ['Programming'],
+                src: 'img/fileRendering.webp',
+                link: 'fileRendering.html',
+                content: [
+                    {
+                    maintitle: 'Rendering of the document file'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        video: videoEN14
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN14
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'Development of a printed circuit board',
+                group: ['Electronics'],
+                src: 'img/printedBoard.webp',
+                link: 'printedBoardDevelopment.html',
+                content: [
+                    {
+                    maintitle: 'Development of a printed circuit board'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        video: videoEN15
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN15
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'Opengl programming',
+                group: ['Programming', '3D'],
+                src: 'img/opengl_programming.webp',
+                link: 'OpenglProgramming.html',
+                content: [
+                    {
+                    maintitle: 'Opengl programming'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        video: videoEN16
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN16
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'Drawing #4',
+                group: ['Drawing'],
+                src: 'img/drawing4.jpg',
+                link: 'drawing4.html',
+                content: [
+                    {
+                    maintitle: 'Rendering of the document file'
+                    },
+                    {
+                        title: 'The final result of my work'
+                    },
+                    {
+                        image: 'drawing4.jpg'
+                    },
+                    {
+                        title: 'Description of the work'
+                    },
+                    {
+                        text: textEN17
+                    },
+                    {
+                        pdf: ['drawing4.pdf', 'work process']
+                    }
+                ]         
+            },
         ]
     },
     {
@@ -571,6 +670,105 @@ const languageData = [
                     }
                 ]         
             },
+            {
+                date: new Date('2024-08-03'),
+                title: 'Рендеринг файлу документа',
+                group: ['Програмування'],
+                src: 'img/fileRendering.webp',
+                link: 'fileRendering.html',
+                content: [
+                    {
+                    maintitle: 'Рендеринг файлу документа'
+                    },
+                    {
+                        title: 'Кінцевий результат моєї роботи'
+                    },
+                    {
+                        video: videoUA14
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA14
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'Розробка друкованої плати',
+                group: ['Електроніка'],
+                src: 'img/printedBoard.webp',
+                link: 'printedBoardDevelopment.html',
+                content: [
+                    {
+                    maintitle: 'Розробка друкованої плати'
+                    },
+                    {
+                        title: 'Кінцевий результат моєї роботи'
+                    },
+                    {
+                        video: videoUA15
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA15
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'Програмування Opengl',
+                group: ['Програмування', '3D'],
+                src: 'img/opengl_programming.webp',
+                link: 'OpenglProgramming.html',
+                content: [
+                    {
+                    maintitle: 'Програмування Opengl'
+                    },
+                    {
+                        title: 'Кінцевий результат моєї роботи'
+                    },
+                    {
+                        video: videoEN16
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA16
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'Малюнок №4',
+                group: ['Малювання'],
+                src: 'img/drawing4.jpg',
+                link: 'drawing4.html',
+                content: [
+                    {
+                    maintitle: 'Малюнок №4'
+                    },
+                    {
+                        title: 'Кінцевий результат моєї роботи'
+                    },
+                    {
+                        image: 'drawing4.jpg'
+                    },
+                    {
+                        title: 'Опис роботи'
+                    },
+                    {
+                        text: textUA17
+                    },
+                    {
+                        pdf: ['drawing4.pdf', 'робочий процес']
+                    }
+                ]         
+            },
         ]
     },
     {
@@ -582,7 +780,7 @@ const languageData = [
             {
                 title: 'Arduino LED マトリックスのプログラミング',
                 date: new Date('2023-06-08'),
-                group: ['電子工学', ' プログラミング'],
+                group: ['電子工学', 'プログラミング'],
                 src: 'img/arduino.webp',
                 link: 'led_matrix.html',
                 content: [
@@ -849,6 +1047,105 @@ const languageData = [
                     },
                     {
                         text: textJP13
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'ドキュメントファイルのレンダリング',
+                group: ['プログラミング'],
+                src: 'img/fileRendering.webp',
+                link: 'fileRendering.html',
+                content: [
+                    {
+                    maintitle: 'ドキュメントファイルのレンダリング'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN14
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP14
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'プリント基板の開発',
+                group: ['エレクトロニクス'],
+                src: 'img/printedBoard.webp',
+                link: 'printedBoardDevelopment.html',
+                content: [
+                    {
+                    maintitle: 'プリント基板の開発'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN15
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP15
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: 'OpenGLプログラミング',
+                group: ['プログラミング', '3D'],
+                src: 'img/opengl_programming.webp',
+                link: 'OpenglProgramming.html',
+                content: [
+                    {
+                    maintitle: 'OpenGLプログラミング'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        video: videoEN16
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP16
+                    }
+                ]         
+            },
+            {
+                date: new Date('2024-08-03'),
+                title: '図面 #4',
+                group: ['描画'],
+                src: 'img/drawing4.jpg',
+                link: 'drawing4.html',
+                content: [
+                    {
+                    maintitle: '図面 #4'
+                    },
+                    {
+                        title: 'プロジェクトの最終結果'
+                    },
+                    {
+                        image: 'drawing4.jpg'
+                    },
+                    {
+                        title: 'プロジェクトの説明'
+                    },
+                    {
+                        text: textJP17
+                    },
+                    {
+                        pdf: ['drawing4.pdf', '作業過程']
                     }
                 ]         
             },

@@ -69,3 +69,25 @@ const videoUA13 = '<iframe class="work__video" src="https://www.youtube.com/embe
 const textEN13 = ['This project was written in X86 architecture assembly programming language. This program simulates the pseudoparallism of many programs by using the clock interrupt.']
 const textUA13 = ['Цей проект був написаний мовою програмування архітектури X86. Ця програма імітує псевдопаралізм багатьох програм за допомогою переривання синхронізації.']
 const textJP13 = ['このプロジェクトは、X86 アーキテクチャのアセンブリ プログラミング言語で記述されています。このプログラムは、クロック割り込みを使用して、多くのプログラムの疑似並列性をシミュレートします。']
+
+
+const videoEN14 = '<iframe class="work__video" src="https://www.youtube.com/embed/6V1mZENBJ2k?si=q0bGYg6PGHECQevK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const textEN14 = ['This work was written in C++. The essence of the program is that we write in a separate file according to a certain syntax information about the content in the file, which will be analyzed for tokens and then rendered']
+const videoUA14 = '<iframe class="work__video" src="https://www.youtube.com/embed/6V1mZENBJ2k?si=q0bGYg6PGHECQevK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const textUA14 = ['Ця робота була написана мовою C++. Суть програми полягає в тому, що ми записуємо в окремий файл відповідно до певного синтаксису інформацію про вміст у файлі, який буде аналізуватися на токени, а потім рендеритися']
+const textJP14 = ['この作業はC++で書かれています。プログラムの本質は、ファイルの内容に関する特定の構文情報に従って別のファイルに書き込むことです。これはトークンが分析され、レンダリングされます。']
+
+const videoEN15 = '<iframe class="work__video" src="https://www.youtube.com/embed/nRMaFs6yhXY?si=Y9oNS1WHGq8jq3Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const textEN15 = ['This work explains how printed circuit boards are designed and how they go into production']
+const videoUA15 = '<iframe class="work__video" src="https://www.youtube.com/embed/VzWZckzn5Hg?si=0U8p6tBJk2M_9zxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const textUA15 = ['У цій роботі пояснюється, як проектуються друковані плати та як вони надходять у виробництво']
+const textJP15 = ['この作品は、プリント基板がどのように設計され、どのように生産されるかを説明します。']
+
+const videoEN16 = '<iframe class="work__video" src="https://www.youtube.com/embed/xOGvAqj-UyI?si=xIOV_g3w57IAhtY7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+const textEN16 = ['This work is written in Ruby using Opengl. Using OOP, it became possible to create a simulation of the movements of objects, their detection and gravity']
+const textUA16 = ['Ця робота написана на Ruby з використанням Opengl. Використовуючи ООП, стало можливим створити симуляцію рухів об\'єктів, їх виявлення та сили тяжіння']
+const textJP16 = ['この作品はOpenGLを使用してRubyで書かれています。OOPを使用することで、物体の動き、その検出、重力のシミュレーションを作成することができました。']
+
+const textEN17 = ['In this work, a simple pencil with a diameter of 0.3 millimeters was used, and then colored pencils were used for brighter colors']
+const textUA17 = ['У цій роботі використовувався простий олівець діаметром 0,3 міліметра, а потім кольорові олівці для більш яскравих кольорів']
+const textJP17 = ['この作品では、直径0.3ミリのシンプルな鉛筆が使用され、その後、より明るい色のために色鉛筆が使用されました。']

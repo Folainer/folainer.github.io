@@ -45,7 +45,7 @@ class Portfolio {
         </div>
         <div class='portfolio'>
             ${ 
-                portfolio.map((element, i) => {
+                portfolio.reverse().map((element, i) => {
                     return `
                     <div class='portfolio__item' data-link=${element.link} data-d='true' data-g='true'>
                         <div class='portfolio__imagewrapper'>
@@ -112,9 +112,8 @@ class Portfolio {
         });
         const portfolioItems = document.querySelectorAll('.portfolio__item');
         const radioButtons = document.querySelectorAll('.filter__radio');
-        radioButtons.forEach(radio => {
-            radio.addEventListener('change', () => {
-                let indexAndDate = [];
+        function changeRatioImidiately(radio) {
+            let indexAndDate = [];
                 portfolioItems.forEach((element, i) => {
                     indexAndDate.push([i, new Date(element.dataset.date)]);
                 });
@@ -178,8 +177,18 @@ class Portfolio {
                         element.dataset.d = false;
                     }
                 })
+        }
+        function changeRatio(radio) {
+            radio.addEventListener('change', () => {
+                changeRatioImidiately(radio)
             });
-        })
+        }
+
+        const reverseAll = document.querySelector('#reversedAll')
+        if (reverseAll) {
+            changeRatioImidiately(reverseAll)
+        }
+        radioButtons.forEach(radio => changeRatio(radio))
         const items = document.querySelectorAll('.portfolio__item');
         items.forEach((element, i) => {
             element.dataset.group = portfolio[i].group
